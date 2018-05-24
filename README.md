@@ -13,7 +13,7 @@ NetUtil - the network operations. Here's how it works:
 3) the client, now having proper credentials, downloads the schedule page and validates it, then broadcasts it to the app to be received by the widget or main activity, if it is open.
 4) if any step fails, the error broadcast is sent instead, forcing the app to rely on already saved data. This way older schedule can be viewed. Most common problem is a server timeout.
 
-Util - misc utility methods. Includes methods: OpenSavedHtml, GetTodaysTimeCode, toSentenceCase, SaveDownloadedSchedule, SaveCredentials, GetLogin, GetSavedPassword, GetSavedTimestamp, GetDownloadLock, SetDownloadLock, GetUpdateFrequency
+Util - misc utility methods. Includes methods: OpenSavedHtml, GetTodaysTimeCode, toSentenceCase, SaveDownloadedSchedule, SaveCredentials, GetLogin, GetSavedPassword, GetSavedTimestamp, GetDownloadLock, SetDownloadLock, GetUpdateFrequency.
 GetDownloadLock and SetDownloadLock are not used in the app, they are part of a legacy code, but I'd like to save them if I ever need them.
 
 FirstLaunchActivity - the welcome screen. The purpose is to load the default values, save username and password, and download the schedule for the first time.
