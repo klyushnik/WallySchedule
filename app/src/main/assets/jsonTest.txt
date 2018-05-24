@@ -1,0 +1,23 @@
+{
+  "mainTax": "8.00",
+  "tax": [
+    {
+      "label": "Tax Exempt",
+      "value": "0.00",
+      "isPercent": true,
+      "replacesMain": true
+    },
+    {
+      "label": "Another Tax",
+      "value": "10.0",
+      "isPercent": true,
+      "replacesMain": true
+    },
+    {
+      "label": "Battery Fee",
+      "value": "12.0",
+      "isPercent": false,
+      "replacesMain": false
+    }
+  ]
+}

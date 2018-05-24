@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/settingsBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/fa_back"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/settingsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/configure"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/very_light_grey"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/accountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Account"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/accountLabel"
+            android:padding="10dp"
+            android:text="User name:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/userNameLabel"
+            android:layout_below="@+id/userNameLabel"
+            android:padding="10dp"
+            android:text="Password:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/settingsUsernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/passwordLabel"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/accountLabel"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/settingsPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settingsUsernameEditText"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/passwordLabel"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/settingsUpdateAccountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/settingsPasswordEditText"
+            android:layout_margin="10dp"
+            android:background="@drawable/ripple_background_green"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="update account settings"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/very_light_grey"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/generalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="General"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/settingsStartTodaySchedSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/generalLabel"
+            android:padding="10dp"
+            android:text="Start with today's schedule"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/todaySchedHintLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/settingsStartTodaySchedSwitch"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Select to start displaying full schedule starting from today's date, otherwise include past couple of weeks."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/updateFrequencyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/todaySchedHintLabel"
+            android:padding="10dp"
+            android:text="Update Frequency:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Spinner
+            android:id="@+id/settingsUpdateFrequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/updateFrequencyLabel"
+            android:layout_below="@+id/todaySchedHintLabel"
+            android:layout_toEndOf="@+id/updateFrequencyLabel"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <Switch
+            android:id="@+id/settingsLunchReminderSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/updateFrequencyLabel"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="Show lunch time reminders"
+            android:textColor="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/settingsTaxCalcTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/settingsLunchReminderSwitch"
+            android:layout_margin="10dp"
+            android:background="@drawable/ripple_background_green"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="tax calculator settings"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments">
+        <item>1.Candy and Tobacco</item>
+        <item>2.Health and Beauty Aids</item>
+        <item>3.Stationery</item>
+        <item>4.Paper Goods</item>
+        <item>5.Media and Gaming</item>
+        <item>6.Cameras and Supplies</item>
+        <item>7.Toys</item>
+        <item>8.Pet Supplies</item>
+        <item>9.Sporting Goods</item>
+        <item>10.Automotive</item>
+        <item>11.Hardware</item>
+        <item>12.Paint and Accessories</item>
+        <item>13.Household Chemicals</item>
+        <item>14.Kitchen and Dining</item>
+        <item>15.Small Appliances (defunct)</item>
+        <item>16.Outdoor Living</item>
+        <item>17.Home Decor</item>
+        <item>18.Seasonal</item>
+        <item>19.Crafts and Fabric</item>
+        <item>20.Bath and Shower</item>
+        <item>21.Books and Magazines</item>
+        <item>22.Bedding</item>
+        <item>23.Menswear</item>
+        <item>24.Boyswear</item>
+        <item>25.Shoes</item>
+        <item>26.Infant Apparel</item>
+        <item>27.Ladies’ Socks</item>
+        <item>28.Hosiery</item>
+        <item>29.Sleepwear and Scrubs</item>
+        <item>30.Bras and Shapewear</item>
+        <item>31.Ladies Accessories</item>
+        <item>32.Jewelry</item>
+        <item>33.Girlswear</item>
+        <item>34.Ladieswear</item>
+        <item>35.Plus Size and Maternity</item>
+        <item>36.Ladies’ Seasonal Apparel</item>
+        <item>37.Service Income (TLE)</item>
+        <item>38.Prescription Pharmacy</item>
+        <item>39.Radio Grill (defunct)</item>
+        <item>40.Pharmacy OTC</item>
+        <item>41.Team Sports Apparel</item>
+        <item>42.TLE Oil</item>
+        <item>43.Models</item>
+        <item>44.Crafts (expanded)</item>
+        <item>45.Sporting Goods (expanded)</item>
+        <item>46.Cosmetics</item>
+        <item>48.Firearms</item>
+        <item>49.Optical</item>
+        <item>51.Fishing</item>
+        <item>52.Floral (artificial)</item>
+        <item>55.Media and Gaming (expanded)</item>
+        <item>56.Lawn and Garden</item>
+        <item>57.Pool and Spa Chemicals</item>
+        <item>58.Contract Wireless</item>
+        <item>59.Service Plans</item>
+        <item>60.Concept Stores and Stamps</item>
+        <item>67.Celebrations</item>
+        <item>69.Dot-Com (S2S)</item>
+        <item>71.Furniture</item>
+        <item>72.Electronics</item>
+        <item>74.Home Management and Luggage</item>
+        <item>77.Large Appliances (defunct)</item>
+        <item>79.Infant Consumables and Hardlines</item>
+        <item>80.Service Deli</item>
+        <item>81.Commercial Bread</item>
+        <item>82.Impulse and Checkout</item>
+        <item>83.Fresh/Frozen Seafood</item>
+        <item>84.Balloons and Fresh Flowers</item>
+        <item>85.Photo Center</item>
+        <item>86.Financial Services</item>
+        <item>87.Wireless</item>
+        <item>88.In-Store Signage</item>
+        <item>90.Dairy</item>
+        <item>91.Frozen Foods</item>
+        <item>92.Dry Grocery</item>
+        <item>93.Fresh/Frozen Meat</item>
+        <item>94.Fresh Produce</item>
+        <item>95.Snacks and Beverages</item>
+        <item>96.Liquor</item>
+        <item>97.Packaged Deli</item>
+        <item>98.Fresh Bakery</item>
+        <item>99.Store Supplies</item>
+    </string-array>
+</resources>

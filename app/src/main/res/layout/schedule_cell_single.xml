@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:clipToPadding="false"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/cellBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:elevation="3dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/dayOfMonthTextView"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="29"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weekNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/dayOfMonthTextView"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dayOfMonthTextView"
+            android:background="@color/min_red"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:text="@string/main_tuesday"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/shiftTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/dayOfMonthTextView"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:text="6:30am - 10:30pm"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/youreOffTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shiftTimeTextView"
+            android:layout_toEndOf="@+id/dayOfMonthTextView"
+            android:paddingStart="10dp"
+            android:text="Meal: 12:00pm - 12:30pm"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jobDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youreOffTextView"
+            android:layout_toEndOf="@+id/dayOfMonthTextView"
+            android:paddingStart="10dp"
+            android:text="Sales Associate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/openShiftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_green_dark"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/main_openshift"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/taxConfig_taxName"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/taxConfigSingle_taxNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:text="My Awesome Tax"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toStartOf="@+id/taxConfigSingle_taxNameTextView"
+        android:paddingBottom="5dp"
+        android:text="@string/taxConfig_taxRate"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/taxConfigSingle_taxRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:text="10.0%"
+        android:textColor="@color/min_red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/taxConfigSingle_replaceMainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/taxConfigSingle_taxNameTextView"
+        android:text="True"
+        android:textColor="@color/min_red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/taxConfigSingle_replaceMainTextView"
+        android:layout_toStartOf="@+id/taxConfigSingle_replaceMainTextView"
+        android:paddingEnd="5dp"
+        android:text="@string/taxConfig_replaceMain"
+        android:textColor="@color/dark_grey" />
+</RelativeLayout>

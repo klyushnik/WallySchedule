@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/taxcalc_addItemLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@color/light_grey"
+        android:clipToPadding="false"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/taxcalc_discountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taxcalc_priceEditText"
+            android:layout_toStartOf="@+id/taxcalc_priceEditText"
+            android:labelFor="@+id/taxcalc_discountEditText"
+            android:padding="10dp"
+            android:text="Discount:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/taxcalc_priceEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/taxcalc_priceLabel"
+            android:layout_toStartOf="@id/taxcalc_settingsTextView"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/taxcalc_priceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:labelFor="@+id/taxcalc_priceEditText"
+            android:padding="10dp"
+            android:text="Item Price:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Spinner
+            android:id="@+id/taxcalc_discountSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/taxcalc_taxOptionSpinner"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/taxcalc_priceEditText"
+            android:layout_marginEnd="10dp" />
+
+        <EditText
+            android:id="@+id/taxcalc_discountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taxcalc_priceEditText"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/taxcalc_discountLabel"
+            android:layout_toStartOf="@+id/taxcalc_discountSpinner"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/taxcalc_taxOptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/taxcalc_discountLabel"
+            android:layout_below="@+id/taxcalc_discountEditText"
+            android:labelFor="@+id/taxcalc_taxOptionSpinner"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:text="Tax Option:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/taxcalc_quantityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taxcalc_taxOptionLabel"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/taxcalc_taxOptionSpinner"
+            android:padding="10dp"
+            android:text="Quantity:"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/taxcalc_addItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/taxcalc_taxOptionSpinner"
+            android:layout_below="@+id/taxcalc_taxOptionLabel"
+            android:background="@drawable/ripple_background_light_blue"
+            android:elevation="2dp"
+            android:text="ADD ITEM"
+            android:textColor="@android:color/white" />
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/taxcalc_addItemButton" />
+
+        <TextView
+            android:id="@+id/taxcalc_line_dirty_hack"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/space1"
+            android:background="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/taxcalc_taxOptionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/taxcalc_quantityLabel"
+            android:layout_alignStart="@+id/taxcalc_discountEditText"
+            android:layout_below="@+id/taxcalc_discountEditText"
+            android:layout_marginEnd="10dp" />
+
+        <EditText
+            android:id="@+id/taxcalc_quantityEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/taxcalc_taxOptionSpinner"
+            android:layout_alignTop="@+id/taxcalc_quantityLabel"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/taxcalc_taxOptionLabel"
+            android:layout_toStartOf="@id/taxcalc_addItemButton"
+            android:ems="10"
+            android:hint="1"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/taxcalc_settingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ripple_background_light_blue"
+            android:clickable="true"
+            android:padding="15dp"
+            android:text="@string/fa_gear"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/taxcalc_bottomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/taxcalc_calculateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/ripple_background_light_blue"
+            android:text="Calculate"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/taxcalc_clearButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/ripple_background_light_blue"
+            android:text="Clear"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/taxcalc_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/taxcalc_bottomLinearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/taxcalc_addItemLinearLayout" />
+    />
+
+</RelativeLayout>

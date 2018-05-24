@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="1000dp"
+    android:minWidth="1000dp"
+    tools:context="studio.sanguine.wallyschedule.TaxCalcConfig">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@color/light_grey"
+        android:elevation="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="100"
+        android:id="@+id/taxConfig_mainTaxLayout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:labelFor="@+id/taxConfig_mainTaxEditText"
+            android:paddingLeft="5dp"
+            android:text="@string/taxConfig_mainLabel"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/taxConfig_mainTaxEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="70"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/taxConfig_mainTaxLayout"
+        android:layout_below="@+id/taxConfig_mainTaxLayout"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_grey"
+        android:elevation="3dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:labelFor="@+id/taxConfig_taxNameEditText"
+            android:padding="10dp"
+            android:text="@string/taxConfig_taxName"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/taxConfig_taxNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/taxConfig_taxNameEditText"
+            android:labelFor="@+id/taxConfig_taxRateEditText"
+            android:padding="10dp"
+            android:text="@string/taxConfig_taxRate"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/taxConfig_taxRateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/taxConfig_taxNameEditText"
+            android:layout_below="@+id/taxConfig_taxNameEditText"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <CheckBox
+            android:id="@+id/taxConfig_replaceCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/taxConfig_taxRateEditText"
+            android:layout_below="@+id/taxConfig_taxRateEditText"
+            android:paddingRight="5dp"
+            android:text="@string/taxConfig_replaceMain"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/taxConfig_addUpdateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taxConfig_radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ripple_background_light_blue"
+            android:text="Add"
+            android:textColor="@android:color/white" />
+
+        <RadioGroup
+            android:id="@+id/taxConfig_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/taxConfig_taxRateEditText"
+            android:layout_toStartOf="@id/taxConfig_replaceCheckBox"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/taxConfig_percentRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="%"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioButton
+                android:id="@+id/taxConfig_dollarsRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$"
+                android:textColor="@color/colorPrimaryDark" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/taxConfig_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/taxConfig_saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_background_light_blue"
+            android:text="@string/taxConfig_save"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/taxConfig_cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_background_light_blue"
+            android:text="@android:string/cancel"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/taxConfig_hintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_geey"
+        android:elevation="1dp"
+        android:padding="5dp"
+        android:text="Hint: Swipe to delete"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/taxConfig_taxesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/taxConfig_hintTextView"
+        android:layout_alignStart="@+id/taxConfig_hintTextView"
+        android:layout_below="@+id/taxConfig_hintTextView"
+        android:layout_above="@+id/taxConfig_bottomLayout"/>
+
+</RelativeLayout>

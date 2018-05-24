@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+        <TextView
+            android:id="@+id/openShiftPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:paddingBottom="7dp"
+            android:paddingTop="10dp"
+            android:text="DM - SALESFLOOR"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/openShiftTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/openShiftPosition"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="08:00am - 12:00pm"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+</LinearLayout>

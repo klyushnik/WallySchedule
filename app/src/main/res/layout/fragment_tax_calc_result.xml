@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="220dp"
+    android:orientation="vertical"
+    tools:context="studio.sanguine.wallyschedule.TaxCalcResultFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Subtotal"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/taxcalc_RF_subtotalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
+        android:text="$0.00"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Taxes"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/taxcalc_RF_taxesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
+        android:text="$0.00"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Total"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:id="@+id/taxcalc_RF_totalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
+        android:text="$0.00"
+        android:textColor="@color/min_red"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/taxcalc_RF_closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_background_light_blue"
+        android:text="@string/main_close"
+        android:textColor="@android:color/white" />
+</LinearLayout>
